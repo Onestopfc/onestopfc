@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&f[]=cabinet-grotesk@500,700,800&display=swap');
+
+:root {
+  --background: 220 20% 97%;
+  --foreground: 222 25% 10%;
+  --border: 220 13% 88%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 25% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 25% 10%;
+  --primary: 183 70% 35%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 13% 92%;
+  --secondary-foreground: 222 25% 10%;
+  --muted: 220 12% 93%;
+  --muted-foreground: 220 8% 44%;
+  --accent: 183 40% 88%;
+  --accent-foreground: 183 60% 20%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 98%;
+  --input: 220 13% 82%;
+  --ring: 183 70% 35%;
+  --radius: 0.75rem;
+  --font-sans: 'Satoshi', 'Inter', sans-serif;
+  --sidebar: 220 15% 94%;
+  --sidebar-foreground: 222 25% 10%;
+  --sidebar-border: 220 13% 88%;
+  --sidebar-primary: 183 70% 35%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 183 30% 90%;
+  --sidebar-accent-foreground: 183 60% 20%;
+  --sidebar-ring: 183 70% 35%;
+  --chart-1: 183 70% 35%;
+  --chart-2: 200 80% 45%;
+  --chart-3: 97 43% 47%;
+  --chart-4: 43 74% 49%;
+  --chart-5: 27 87% 55%;
+}
+
+.dark {
+  --background: 224 18% 8%;
+  --foreground: 210 15% 88%;
+  --border: 222 14% 18%;
+  --card: 222 16% 11%;
+  --card-foreground: 210 15% 88%;
+  --popover: 222 16% 13%;
+  --popover-foreground: 210 15% 88%;
+  --primary: 183 70% 42%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 222 14% 18%;
+  --secondary-foreground: 210 15% 88%;
+  --muted: 222 14% 16%;
+  --muted-foreground: 215 10% 55%;
+  --accent: 183 30% 20%;
+  --accent-foreground: 183 70% 60%;
+  --destructive: 0 75% 55%;
+  --destructive-foreground: 0 0% 98%;
+  --input: 222 14% 25%;
+  --ring: 183 70% 42%;
+  --sidebar: 222 18% 9%;
+  --sidebar-foreground: 210 15% 88%;
+  --sidebar-border: 222 14% 17%;
+  --sidebar-primary: 183 70% 42%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 222 16% 16%;
+  --sidebar-accent-foreground: 210 15% 88%;
+  --sidebar-ring: 183 70% 42%;
+  --chart-1: 183 70% 42%;
+  --chart-2: 200 80% 55%;
+  --chart-3: 97 43% 55%;
+  --chart-4: 43 74% 65%;
+  --chart-5: 27 87% 65%;
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Satoshi', 'Inter', sans-serif;
+  }
+  h1, h2, h3 { font-family: 'Cabinet Grotesk', 'Satoshi', sans-serif; font-weight: 700; }
+}
+
+.gradient-card { background: linear-gradient(135deg, hsl(183 70% 28%) 0%, hsl(210 70% 35%) 100%); }
+
+.status-pending { background: hsl(43 74% 20%); color: hsl(43 74% 60%); }
+.status-approved { background: hsl(97 43% 18%); color: hsl(97 43% 55%); }
+.status-active { background: hsl(183 70% 15%); color: hsl(183 70% 55%); }
+.status-rejected { background: hsl(0 75% 18%); color: hsl(0 75% 60%); }
+.status-overdue { background: hsl(0 75% 18%); color: hsl(0 75% 60%); }
+.status-completed { background: hsl(220 14% 18%); color: hsl(215 10% 55%); }
