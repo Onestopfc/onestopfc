@@ -3,7 +3,7 @@
 
 import { type Customer, type LoanRequest } from "@shared/schema";
 
-const API_BASE = "";
+const API_BASE = "https://onestopfc.onrender.com";
 
 async function apiFetch(path: string, options?: RequestInit) {
   const res = await fetch(`${API_BASE}${path}`, {
