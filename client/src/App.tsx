@@ -15,6 +15,7 @@ import StaffLogin from "./pages/StaffLogin";
 import StaffDashboard from "./pages/StaffDashboard";
 import StaffCustomers from "./pages/StaffCustomers";
 import StaffAssess from "./pages/StaffAssess";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/not-found";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/dashboard" component={CustomerDashboard} />
           <Route path="/loan/new" component={LoanRequest} />
           <Route path="/loans" component={LoanHistory} />
+          <Route path="/profile" component={Profile} />
           <Route path="/staff" component={StaffLogin} />
           <Route path="/staff/dashboard" component={StaffDashboard} />
           <Route path="/staff/customers" component={StaffCustomers} />

@@ -15,7 +15,7 @@ function NavBar({ active }: { active: string }) {
     { icon: "🏠", label: "Home", path: "/dashboard" },
     { icon: "📋", label: "My Loans", path: "/loans" },
     { icon: "➕", label: "Request", path: "/loan/new" },
-    { icon: "👤", label: "Profile", path: "/dashboard" },
+    { icon: "👤", label: "Profile", path: "/profile" },
   ];
   return (
     <div className="sticky bottom-0 bg-card border-t border-border px-4 pt-3 pb-6 flex justify-around">
